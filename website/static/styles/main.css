@@ -36,7 +36,9 @@
 .nav-wrapper{
     /* position: absolute; */
     /* display: inline-block; */
-    float: right;
+    display: flex;
+    justify-content: right;
+    /* float: right; */
  }
 
 .portfolio-navbar{
