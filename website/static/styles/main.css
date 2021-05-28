@@ -35,7 +35,8 @@
 
 .nav-wrapper{
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
+    float: right;
  }
 
 .portfolio-navbar{
