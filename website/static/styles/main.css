@@ -33,14 +33,6 @@
     width: 50px;
 }
 
-.nav-wrapper{
-    /* position: absolute; */
-    /* display: inline-block; */
-    display: flex;
-    justify-content: right;
-    /* float: right; */
- }
-
 .portfolio-navbar{
     background-color: rgba(255, 255, 255, 0.342);
     height: 100px;
@@ -65,5 +57,11 @@ a.add-bottom:hover{
 }
 
 @media (max-width: 500px) { 
-
+    .nav-wrapper{
+        /* position: absolute; */
+        /* display: inline-block; */
+        display: flex;
+        justify-content: right;
+        /* float: right; */
+     }
 }
