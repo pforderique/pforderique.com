@@ -33,6 +33,11 @@
     width: 50px;
 }
 
+.nav-wrapper{
+    position: relative;
+    display: inline-block;
+ }
+
 .portfolio-navbar{
     background-color: rgba(255, 255, 255, 0.342);
     height: 100px;
