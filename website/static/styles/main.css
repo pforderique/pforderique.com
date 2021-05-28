@@ -1,0 +1,61 @@
+/* main webpage titler for portfiolio pages */
+.main-title{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+/* AIR CONTAINER STUFF */
+.air-container{
+    background-color: rgba(228, 240, 241, 0.568);
+    color: black;
+    border-radius: 25px;
+    /* margin: 15px 45px; */
+    margin: 0 auto;
+    padding: 30px 30px;
+}
+
+/* add in this navy top border */
+.top-navy{
+    border-style: solid;
+    border-width: 15px 0px 0px 0px;
+    border-color: rgb(54, 82, 120);
+    z-index: 9999;
+    width: 100%;
+}
+/* add in this pfo flag image */
+.flag-image{
+    display: flex;
+    justify-content: center;
+    margin: 0px 48%;
+    position: absolute;
+    z-index: 9998;
+    width: 50px;
+}
+
+.portfolio-navbar{
+    background-color: rgba(255, 255, 255, 0.342);
+    height: 100px;
+    font-size: large;
+}
+
+/* this will look inside "static/images/portfolio-background.jpg" */
+.portfolio-bg {
+    background-image: url("../images/portfolio-bg.jpg");
+    background-size: contain;
+    padding-bottom: 37.5%; /* = ( 600 / 1600 ) x 100 */
+}
+
+.nav-item.spaced {margin-right: 20px;}
+
+a.add-bottom{
+    background: rgba(238, 238, 238, 0);
+    border: 5px solid transparent;
+}
+a.add-bottom:hover{
+    border-bottom: 5px solid #d0d0d0;
+}
+
+@media (max-width: 500px) { 
+
+}

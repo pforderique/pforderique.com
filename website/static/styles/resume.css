@@ -1,0 +1,31 @@
+iframe{
+    border-radius: 20px;
+    width: 85%;
+    height: 1150px;
+    margin-left: 8%;
+}
+
+@media (max-width: 1000px) { 
+    iframe{
+        border-radius: 20px;
+        width: 97%;
+        height: 880px;
+        margin-left: 3%;
+    }
+}
+@media (max-width: 700px) { 
+    iframe{
+        border-radius: 20px;
+        width: 97%;
+        height: 700px;
+        margin-left: 3%;
+    }
+}
+@media (max-width: 500px) { 
+    iframe{
+        border-radius: 8px;
+        width: 99%;
+        height: 600px;
+        margin-left: 1%;
+    }
+}

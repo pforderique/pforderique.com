@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+
+{% block html_head %}
+    <link rel="stylesheet" type="text/css" href="static/styles/projects.css">
+{% endblock %}
+
+{% block title %}Projects{% endblock %}
+
+<!----------- CONTENT ----------->
+{% block content %} 
+<h1 class="main-title" align="center">
+    Projects
+</h1> 
+
+<ul>
+{% for project in projects %}
+    <li>
+
+        Project: <a href="{{url_for('views.project', name=project.name)}}"><b>{{project.name}}</b></a> created on {{project.date_created}}<br>
+        <img src="{{project.image_link}}">
+
+        <p>
+            {{project.long_description}}
+        </p>
+
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

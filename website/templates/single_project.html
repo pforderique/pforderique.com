@@ -1,0 +1,36 @@
+{% extends "base.html" %} 
+
+{% block html_head %}
+    <link rel="stylesheet" type="text/css" href="../static/styles/single_project.css">
+{% endblock %}
+
+{% block title %}{{project.name}}{% endblock %}
+
+<!----------- CONTENT ----------->
+{% block content %} 
+
+{% if project is not none%}
+
+    <h1 class="main-title" align="center">
+        {{project.name}}
+    </h1> 
+
+    {% if project.video_link == "" %}
+        <img src="{{project.image_link}}">
+    {% else %}
+        <iframe src="{{project.video_link}}" frameborder="0"></iframe>
+    {% endif %}
+
+    <p>
+        {{project.long_description}}
+    </p>
+
+{% else %}
+
+    <h1 class="main-title" align="center">
+        Project Does Not Exist
+    </h1> 
+
+{% endif %}
+
+{% endblock %}

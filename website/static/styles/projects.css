@@ -1,0 +1,24 @@
+.list-item {
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: 0 0 12px 6px #eee;
+    margin: 16px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    color: rgb(54, 82, 120);
+    background-color: transparent;
+}
+
+ul li iframe, ul li img {
+    display: block;
+    max-width:330px;
+    max-height:330px;
+    height: auto;
+    width: auto;
+}

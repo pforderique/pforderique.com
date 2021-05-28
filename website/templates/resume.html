@@ -1,0 +1,18 @@
+{% extends "base.html" %} 
+
+{% block html_head %}
+    <link rel="stylesheet" type="text/css" href="static/styles/resume.css">
+{% endblock %}
+
+{% block title %}Resume{% endblock %}
+
+<!----------- CONTENT ----------->
+
+{% block content %} 
+<h1 class="main-title" align="center">
+    Resume
+</h1> 
+
+<iframe src="static/docs/resume.pdf"></iframe>
+
+{% endblock %}

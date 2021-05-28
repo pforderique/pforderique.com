@@ -1,0 +1,7 @@
+__pycache__/
+config.py
+.vscode
+dbapi.py
+testviews.py
+dbcontroller.py
+*.db

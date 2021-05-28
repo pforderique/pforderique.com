@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+
+{% block html_head %}
+    <link rel="stylesheet" type="text/css" href="static/styles/home.css">
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+<!----------- CONTENT ----------->
+{% block content %} 
+<h1 class="main-title" align="center">
+    Hello! I'm Piero Fabrizzio Orderique
+</h1> 
+<p align="center">
+    You are the {{visitor_number}}th person to visit the site!
+    <br>
+    <br>
+    I am current sophomore at MIT studying Computer Science and Engineering. 
+    My hobbies include programming, biking, and swimming &#127946;
+</p>
+
+{% endblock %}
