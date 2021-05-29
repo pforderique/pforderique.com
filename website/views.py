@@ -41,7 +41,8 @@ def projects():
     
     if name:
         queryname = f"%{name}%"
-        featured_projects = db.session.query(Project).filter(Project.name.like(queryname)).limit(10).all()
+        featured_projects = db.session.query(Project).filter(Project.name.like(queryname)
+        ).order_by(Project.importance_score.desc()).limit(10).all()
     else:
         featured_projects = db.session.query(Project).order_by(Project.importance_score.desc()).limit(10).all()
 
