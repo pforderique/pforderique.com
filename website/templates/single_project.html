@@ -11,19 +11,33 @@
 
 {% if project is not none%}
 
-    <h1 class="main-title" align="center">
-        {{project.name}}
-    </h1> 
+    <div class="content-container">
+        <h1 class="main-title" align="center">
+            {{project.name}}
+        </h1> 
 
-    {% if project.video_link == "" %}
-        <img src="{{project.image_link}}">
-    {% else %}
-        <iframe src="{{project.video_link}}" frameborder="0"></iframe>
-    {% endif %}
+        <div class="image-container">
+            {% if project.video_link == "" %}
+                <img src="{{project.image_link}}">
+            {% else %}
+                <iframe src="{{project.video_link}}" frameborder="0"></iframe>
+            {% endif %}
+        </div>
 
-    <p>
-        {{project.long_description}}
-    </p>
+        <div class="project-data">
+            <div>Date Created: {{project.date_created}}</div>
+            <div>Views: {{project.views}}</div>
+        </div> 
+
+        <div class="project-des">
+            {{project.long_description}}
+            {% if project.project_link is not none %}
+                See more 
+                <a href="{{project.project_link}}" style="color: rgb(255, 183, 49);">here</a>.
+            {% endif %}
+        </div>
+
+    </div>
 
 {% else %}
 

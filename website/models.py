@@ -19,7 +19,7 @@ class Project(db.Model):
     views = db.Column(db.Integer, nullable=False, default=0) 
     image_link = db.Column(db.String(150))
     video_link = db.Column(db.String(150), default="")
-    project_link = db.Column(db.String(150)) # does this project have an external link?
+    project_link = db.Column(db.String(150), default="") # does this project have an external link?
     short_description = db.Column(db.String(100), nullable=False) # HAS to have info
     long_description = db.Column(db.String(3000), nullable=False) # HAS to have info
     importance_score = db.Column(db.Float, nullable=False, default=0.0) 
