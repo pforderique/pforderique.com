@@ -12,7 +12,60 @@
     Projects
 </h1> 
 
-<ul>
+{% if projects == [] %}
+    <p>none brodie. show a better empty space next time cuzzz</p>
+{% else %}
+<div class="projects-grid">
+    {% for project_tup in projects %}
+        <div class="projects-row">
+            {% if project_tup[1] != "" %}
+            <div class="col air-container">
+                <h3> 
+                    <a href="{{url_for('views.project', name=project_tup[0].name)}}">
+                    <b>{{project_tup[0].name}}</b></a> 
+                </h3>
+                <div class="image-container">
+                    <img src="{{project_tup[0].image_link}}">
+                </div>   
+                <div class="image-data">
+                    <div>Date: {{project_tup[0].date_created}}</div>
+                    <div>Views: {{project_tup[0].views}}</div>
+                </div>             
+            </div>
+            <div class="col air-container">
+                <h3>
+                    <a href="{{url_for('views.project', name=project_tup[1].name)}}">
+                    <b>{{project_tup[1].name}}</b></a> 
+                </h3>
+                <div class="image-container">
+                    <img src="{{project_tup[1].image_link}}">
+                </div>
+                <div class="image-data">
+                    <div>Date: {{project_tup[1].date_created}}</div>
+                    <div>Views: {{project_tup[1].views}}</div>
+                </div> 
+            </div>
+            {% else %}
+            <div class="col air-container" style="margin: 0 2%">
+                <h3> 
+                    <a href="{{url_for('views.project', name=project_tup[0].name)}}">
+                    <b>{{project_tup[0].name}}</b></a> 
+                </h3>
+                <div class="image-container">
+                    <img src="{{project_tup[0].image_link}}">
+                </div>   
+                <div class="image-data">
+                    <div>Date: {{project_tup[0].date_created}}</div>
+                    <div>Views: {{project_tup[0].views}}</div>
+                </div>             
+            </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<!-- <ul>
 {% for project in projects %}
     <li>
 
@@ -25,6 +78,5 @@
 
     </li>
     {% endfor %}
-</ul>
-
+</ul> -->
 {% endblock %}

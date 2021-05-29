@@ -41,11 +41,25 @@ def projects():
     
     if name:
         queryname = f"%{name}%"
-        featured_projects = db.session.query(Project).filter(Project.name.like(queryname)).limit(10)
+        featured_projects = db.session.query(Project).filter(Project.name.like(queryname)).limit(10).all()
     else:
-        featured_projects = db.session.query(Project).order_by(Project.importance_score.desc()).limit(10)
+        featured_projects = db.session.query(Project).order_by(Project.importance_score.desc()).limit(10).all()
 
-    return render_template("projects.html", projects=featured_projects)
+    #* have to convert featured_projects into tuple list for jijna rendering (p1,p2), (p3,p4), ...
+    size = len(featured_projects)
+    tupled_projects = []
+
+    for idx in range(0, size, 2):
+        p1 = featured_projects[idx]
+
+        if idx + 1 < size: 
+            p2 = featured_projects[idx+1]
+        else: 
+            p2 = ""
+
+        tupled_projects.append((p1,p2))
+
+    return render_template("projects.html", projects=tupled_projects)
 
 @views.route('/project/<name>', methods=["GET"])
 def project(name):

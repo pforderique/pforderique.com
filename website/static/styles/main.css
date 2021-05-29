@@ -10,16 +10,6 @@
     margin: 50px 0px;
 }
 
-/* AIR CONTAINER STUFF */
-.air-container{
-    background-color: rgba(228, 240, 241, 0.568);
-    color: black;
-    border-radius: 25px;
-    /* margin: 15px 45px; */
-    margin: 0 auto;
-    padding: 30px 30px;
-}
-
 /* add in this navy top border */
 .top-navy{
     border-style: solid;

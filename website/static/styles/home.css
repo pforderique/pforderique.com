@@ -68,7 +68,7 @@
     color: #000000;
     background-color: rgba(54, 82, 120, 0.116);
     width: 92%;
-    margin: 0% 4% 15%;
+    margin: 0% 4%;
     padding: 6vh 0% 0vh 0%;
     display: flex; 
     justify-content: space-evenly;
@@ -100,15 +100,14 @@
     width: auto;
     border-radius: 15px;
 }
-
 .skills-section{
     color: #000000;
-    background-color: rgba(54, 82, 120, 0.116);
+    /* background-color: rgba(54, 82, 120, 0.116);
     width: 92%;
     margin: 0% 4% 15%;
-    padding: 6vh 0% 0vh 0%;
-    /* display: flex; 
-    justify-content: space-evenly;
+    padding: 6vh 0% 0vh 0%; */
+    display: flex; 
+    /* justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap; */
 }
