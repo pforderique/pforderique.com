@@ -1,0 +1,66 @@
+.main-entrance-box {
+    color: #FFFFFF;
+    width: 92%;
+    margin: 2% 4% 0% 4%;
+    padding: 12vh 0% 5vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-color: #000000;
+    background-image: url("/static/images/plexus-bg2.jpg");
+}
+
+.entrance-font {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+}
+
+.subtitle {
+    font-size: 1.75rem;
+    font-style: italic;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 200;
+}
+
+.textbox {
+    color: #FFFFFF;
+    width: 92%;
+    margin: -4% 13%;
+    padding: 5vh 3%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000a2;
+    border-style: solid;
+    border-width: 1px 1px;
+    border-radius: 10px;
+    border-color: #ffffff;
+}
+
+.resume-button {
+    color: crimson;
+    white-space: nowrap;
+    margin: 6% 0% 0% 0%;
+    padding: 1vh 2%;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000a2;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.resume-button:hover {
+    background-color: #000000de;
+    color: rgb(255, 133, 158);
+}

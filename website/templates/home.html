@@ -8,9 +8,32 @@
 
 <!----------- CONTENT ----------->
 {% block content %} 
-<h1 class="main-title" align="center">
+<!-- <h1 class="main-title" align="center">
     Hello! I'm Piero Fabrizzio Orderique
-</h1> 
+</h1>  -->
+
+<div class="main-entrance-box">
+    <div class="textbox">
+        <h1 class="entrance-font">
+            <span style="color: crimson;">Hello! </span> I'm Piero.
+        </h1>
+
+        <h2>
+            <div class="subtitle">
+                Computer Science Gates Scholar at 
+                <span style="color:crimson;
+                            font-weight: bold;">
+                    MIT
+                </span>
+            </div>
+        </h2>
+    </div>
+    <a class="resume-button" href="static/docs/resume.pdf" download="OrderiquePieroResume">Download Resume</a>
+    <!-- <form method="get" action="static/docs/resume.pdf" download>
+        <button class="resume-button" type="submit">Download Resume</button>
+    </form> -->
+</div>
+
 <p align="center">
     You are the {{visitor_number}}th person to visit the site!
     <br>
