@@ -68,6 +68,7 @@ def project(name):
 
     if project is not None:
         project.importance_score += 0.0625
+        project.views += 1
         db.session.commit()
 
     return render_template("single_project.html", project=project)
