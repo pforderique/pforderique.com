@@ -8,13 +8,20 @@
 
 <!----------- CONTENT ----------->
 {% block content %} 
+
+{% if projects == [] %}
+    <h1 class="main-title" align="center">
+        No Projects Found
+    </h1> 
+    <p align="center" style="margin-top: 50%;">
+        Click
+        <a style="color: crimson;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here</a> 
+        for a polynomial-time algorithm of the <span style="font-weight: bold; color: black;">Halting Problem</span>
+    </p>
+{% else %}
 <h1 class="main-title" align="center">
     Projects
 </h1> 
-
-{% if projects == [] %}
-    <p>none brodie. show a better empty space next time cuzzz</p>
-{% else %}
 <div class="projects-grid">
     {% for project_tup in projects %}
         <div class="projects-row">
@@ -81,18 +88,5 @@
 </div>
 {% endif %}
 
-<!-- <ul>
-{% for project in projects %}
-    <li>
 
-        Project: <a href="{{url_for('views.project', name=project.name)}}"><b>{{project.name}}</b></a> created on {{project.date_created}}<br>
-        <img src="{{project.image_link}}">
-
-        <p>
-            {{project.long_description}}
-        </p>
-
-    </li>
-    {% endfor %}
-</ul> -->
 {% endblock %}
