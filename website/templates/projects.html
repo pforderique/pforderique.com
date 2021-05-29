@@ -27,11 +27,15 @@
                 <div class="image-container">
                     <img src="{{project_tup[0].image_link}}">
                 </div>   
-                <div class="image-data">
+                <div class="project-data">
                     <div>Date: {{project_tup[0].date_created}}</div>
                     <div>Views: {{project_tup[0].views}}</div>
-                </div>             
+                </div>  
+                <div class="project-des">
+                    {{project_tup[0].short_description}}
+                </div>           
             </div>
+
             <div class="col air-container">
                 <h3>
                     <a href="{{url_for('views.project', name=project_tup[1].name)}}">
@@ -40,9 +44,12 @@
                 <div class="image-container">
                     <img src="{{project_tup[1].image_link}}">
                 </div>
-                <div class="image-data">
+                <div class="project-data">
                     <div>Date: {{project_tup[1].date_created}}</div>
                     <div>Views: {{project_tup[1].views}}</div>
+                </div> 
+                <div class="project-des">
+                    {{project_tup[1].short_description}}
                 </div> 
             </div>
             {% else %}
@@ -54,10 +61,13 @@
                 <div class="image-container">
                     <img src="{{project_tup[0].image_link}}">
                 </div>   
-                <div class="image-data">
+                <div class="project-data">
                     <div>Date: {{project_tup[0].date_created}}</div>
                     <div>Views: {{project_tup[0].views}}</div>
-                </div>             
+                </div>    
+                <div class="project-des">
+                    {{project_tup[0].short_description}}
+                </div>          
             </div>
             {% endif %}
         </div>
