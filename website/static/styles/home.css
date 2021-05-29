@@ -66,18 +66,18 @@
 
 .about-section {
     color: #000000;
-    /* background-color: rgba(54, 82, 120, 0.116); */
+    background-color: rgba(54, 82, 120, 0.116);
     width: 92%;
     margin: 0% 4% 15%;
     padding: 6vh 0% 0vh 0%;
     display: flex; 
     justify-content: space-evenly;
-    align-items: center;
+    align-items:flex-end;
     flex-wrap: wrap;
 }
 
 .about-textbox {
-    width: 60%;
+    width: 63%;
     padding: 4vh 0 0 0;
     text-align: center;
     vertical-align: text-top;
@@ -99,4 +99,16 @@
     height: auto;
     width: auto;
     border-radius: 15px;
+}
+
+.skills-section{
+    color: #000000;
+    background-color: rgba(54, 82, 120, 0.116);
+    width: 92%;
+    margin: 0% 4% 15%;
+    padding: 6vh 0% 0vh 0%;
+    /* display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; */
 }
