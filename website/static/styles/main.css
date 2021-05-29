@@ -1,3 +1,8 @@
+/* main body container */
+.container {
+    margin-bottom: 7%;
+}
+
 /* main webpage titler for portfiolio pages */
 .main-title{
     display: flex;
@@ -41,9 +46,11 @@
 
 /* this will look inside "static/images/portfolio-background.jpg" */
 .portfolio-bg {
-    background-image: url("../images/portfolio-bg.jpg");
+    background: url("../images/portfolio-bg.jpg");
     background-size: contain;
-    padding-bottom: 37.5%; /* = ( 600 / 1600 ) x 100 */
+    padding-bottom: 1%;
+    height: 100%;
+    background-repeat: repeat;
 }
 
 .nav-item.spaced {margin-right: 20px;}
