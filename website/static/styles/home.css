@@ -66,10 +66,10 @@
 
 .about-section {
     color: #000000;
-    background-color: rgba(54, 82, 120, 0.116);
+    /* background-color: rgba(54, 82, 120, 0.116); */
     width: 92%;
     margin: 0% 4%;
-    padding: 6vh 0% 0vh 0%;
+    padding: 6vh 0% 5vh 0%;
     display: flex; 
     justify-content: space-evenly;
     align-items:flex-end;
@@ -101,13 +101,47 @@
     border-radius: 15px;
 }
 .skills-section{
-    color: #000000;
-    /* background-color: rgba(54, 82, 120, 0.116);
+    color: #2c2c2c;
     width: 92%;
-    margin: 0% 4% 15%;
-    padding: 6vh 0% 0vh 0%; */
-    display: flex; 
-    /* justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap; */
+    margin: 0% 4% 0% 4%;
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+    background-size: cover;
+    background-image: url("/static/images/plexus-bg3.jpg");
+    opacity: 0.8;
+    text-align: center;
+}
+.skills-title {
+    width: 40%;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 4vh 30% 4vh 30%;
+    padding: 2vh 2.5% 2vh 2.5%;
+}
+
+.skills{
+    padding: 0 5vw;
+}
+
+.skills-title h3{
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+}
+
+.skills-subtitle{
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+.skills-text{
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
 }
