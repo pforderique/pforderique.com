@@ -1,6 +1,7 @@
 /* main body container */
 .containerx {
     margin: 0 8% 7%;
+    padding-top: 1%;
 }
 
 /* main webpage titler for portfiolio pages */
@@ -30,7 +31,7 @@
 
 .portfolio-navbar{
     background-color: rgba(255, 255, 255, 0.342);
-    height: 100px;
+    /* height: 100px; */
     font-size: large;
 }
 
