@@ -5,3 +5,10 @@ dbapi.py
 testviews.py
 dbcontroller.py
 *.db
+pfo_env/
+.ebextensions/
+.ebignore
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
