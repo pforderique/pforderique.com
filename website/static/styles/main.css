@@ -23,7 +23,7 @@
 .flag-image{
     display: flex;
     justify-content: center;
-    margin: 0px 48%;
+    margin: 0px 47%;
     position: absolute;
     z-index: 9998;
     width: 50px;
