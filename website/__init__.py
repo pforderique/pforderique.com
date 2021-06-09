@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from .config import MY_SECRET_KEY
-from os import path
+from os import path, environ
 from flask_login import LoginManager
 
 db = SQLAlchemy()
@@ -11,6 +11,8 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = MY_SECRET_KEY
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///{}'.format(DB_NAME)
+    # app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql://{environ['RDS_USERNAME']}:{environ['RDS_PASSWORD']}@{environ['RDS_HOSTNAME']}/{environ['RDS_DB_NAME']}"
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
 
     from .views import views
@@ -21,6 +23,7 @@ def create_app():
     app.register_blueprint(dbapi, url_prefix="/dbapi")
 
     create_database(app)
+    # db.create_all(app=app)
 
     return app
 

@@ -8,6 +8,7 @@ dbcontroller.py
 pfo_env/
 .ebextensions/
 .ebignore
+.env
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

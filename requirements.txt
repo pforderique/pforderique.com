@@ -8,6 +8,7 @@ importlib-metadata==4.3.1
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
+PyMySQL==0.7.11
 SQLAlchemy==1.4.17
 typing-extensions==3.10.0.0
 Werkzeug==2.0.1
