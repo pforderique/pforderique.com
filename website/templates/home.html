@@ -92,110 +92,28 @@
     </div>
     <table style="padding: 6vh 0 0 0;">
         <tbody>
-            
+            {% for job in experience_data %}
             <tr>
                 <td style="width: 10%; vertical-align: text-top;">
-                    <img style="width: 100%; border-radius: 5px;" src="/static/images/nvidia.png" alt="nvidia_logo">
+                    <img style="width: 100%; border-radius: 5px;" src="{{job['logoPath']}}" alt="company_logo">
                 </td>
                 <td style="width: 90%; padding: 0 5% 4vh 5%;">   
-                    <h5 class="xp-title">ROBOTICS SOFTWARE INTERN - NVIDIA</h5>
+                    <h5 class="xp-title">{{job['name']}}</h5>
                     <p class="xp-body">
-                        <i>Santa Clara, CA (Remote)</i><br>
-                        <i>Summer 2021</i>
+                        <i>{{job['location']}}</i><br>
+                        <i>{{job['duration']}}</i>
                         <div></div>
                         <div></div>
-                        <p style="margin: 1vh 0 2vh 0;">
-                            I had the opportunity to work with NVIDIA's Robotics Platform Team. The ROS Engineering Team strived to help 
-                            bring NVIDIA's powerful hardware to the front lines with optimized algorithms to challenge thier open-source, CPU 
-                            versions of ROS2 packages.
-                        </p>
+                        <p style="margin: 1vh 0 2vh 0;">{{job['description']|safe}}</p>
                         <ul>
-                            <li>Optimized standard ROS2 packages to run faster on NVIDIA hardware using internal APIs (C++)</li> 
-                            <li>Reinforced project stability by writing multiple unit and integration tests (Python)</li>
-                            <li>Set software improvement goals based on performance benchmarking scripts (Python)</li>
+                            {% for bullet in job['bullets'] %}
+                            <li>{{bullet}}</li>
+                            {% endfor %}
                         </ul>
                     </p>
                 </td>
             </tr>
-
-            <tr>
-                <td style="width: 10%; vertical-align: text-top;">
-                    <img style="width: 100%; border-radius: 5px;" src="/static/images/MIT_logo.png" alt="ihtfp">
-                </td>
-                <td style="width: 90%; padding: 0 5% 4vh 5%;">   
-                    <h5 class="xp-title">SOFTWARE ENGINEER - MITOS</h5>
-                    <p class="xp-body">
-                        <i>Cambridge, MA (Remote)</i><br>
-                        <i>2020-2021</i>
-                        <div></div>
-                        <div></div>
-                        <p style="margin: 1vh 0 2vh 0;">
-                            The MIT Office of Sustainability (MITOS) team focuses on preparing MIT for climate 
-                            change. I worked with the Flood Risk Analysis team to see the impacts of future storm flooding on our campus.<br>
-                            <span style="font-weight: bold; color: black;">See an article about my Fellow Story </span>
-                            <a href="http://sustainability.mit.edu/article/student-fellow-stories-piero-orderique" style="color: rgb(179, 122, 0);">
-                                here
-                            </a>.
-                        </p>
-                        <ul>
-                            <li>Cut down data processing time in half using SQL queries in ArcGIS Pro </li>
-                            <li>Created custom VBA functions for Excel to enhance project scalability and efficiency for future analysis</li>
-                            <li>Work helped identify a potential $600M+ worth of damage to university property from storm flooding simulation</li>
-                            <li>Design a Python package for reading and visualizing 300+ specialized data files from models using SciPy and matplotlib while practicing OOD</li>
-                            <li>Reduced space storage by 99.99% (from 1.1TB to &lt 1MB) by filtering large global datasets on a remote linux cluster</li>
-                            <li>Created data visualizations (matplotlib) for precipitation and temperature predictions in the Cambridge area</li>
-                        </ul>
-                    </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="width: 10%; vertical-align: text-top;">
-                    <img style="width: 100%; border-radius: 5px;" src="/static/images/borinquenfoods_logo.jpg" alt="foods">
-                </td>
-                <td style="width: 90%; padding: 0 5% 4vh 5%;">   
-                    <h5 class="xp-title">PROJECT ASSOCIATE</h5>
-                    <p class="xp-body">
-                        <i>Columbus, GA</i><br>
-                        <i>2017-2020</i>
-                        <div></div>
-                        <div></div>
-                        <p style="margin: 1vh 0 2vh 0;">
-                            Borinquen Foods is a family owned, Carribean style restaurant/store that sells ethnic foods from Central and South America.
-                        </p>
-                        <ul>
-                            <li>Built and implemented an Arduino security system that sends messages to the owner when activated</li>
-                            <li>Updated security systems and feedback on a budget</li>
-                            <li>Quadrupled the restaurant’s Google reviews and increased market reach by designing advertisements on Canva</li>
-                            <li>Digitized checking accounts using Excel</li>
-                        </ul>
-                    </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="width: 10%; vertical-align: text-top;">
-                    <img style="width: 100%; border-radius: 5px;" src="/static/images/mathnasium_logo.jpg" alt="foods">
-                </td>
-                <td style="width: 90%; padding: 0 5% 4vh 5%;">   
-                    <h5 class="xp-title">Math Instructor</h5>
-                    <p class="xp-body">
-                        <i>Columbus, GA</i><br>
-                        <i>2019</i>
-                        <div></div>
-                        <div></div>
-                        <p style="margin: 1vh 0 2vh 0;">
-                            Mathnasium is a nationwide math tutoring business helping students and adults enjoy learning mathematics.
-                        </p>
-                        <ul>
-                            <li>Instructed adults for exams (GRE, ASVAB, etc.) and oversaw the instruction of 70+ K-12 students</li>
-                            <li>Received 100% positive evaluations and rescheduling rates</li>
-                            <li>Accommodated Spanish-speaking students and applied training to work with students with learning disabilities</li>
-                        </ul>
-                    </p>
-                </td>
-            </tr>
-
+            {% endfor %}
         </tbody>
     </table>
 </div>

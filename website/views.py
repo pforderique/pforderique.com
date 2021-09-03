@@ -2,8 +2,8 @@ from flask import Blueprint, render_template, request, flash, jsonify, redirect,
 from flask_login import login_required, current_user
 from .models import Project, Visitor
 from . import db
-import json
 from datetime import datetime
+import json
 
 views = Blueprint('views', __name__)
 
@@ -32,7 +32,10 @@ def home():
     db.session.commit()
     print(visitor, "added!!!")
 
-    return render_template("home.html", user=current_user, visitor_number=visitor_number)
+    with open('website\static\docs\experience.json') as f:
+      experience_data = json.load(f)
+
+    return render_template("home.html", user=current_user, visitor_number=visitor_number, experience_data=experience_data)
 
 @views.route('/projects', methods=["GET"])
 def projects():

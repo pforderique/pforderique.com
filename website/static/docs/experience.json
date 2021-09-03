@@ -1,0 +1,54 @@
+[
+    {
+        "name":"Robotics Software Intern - NVIDIA",
+        "logoPath":"/static/images/nvidia.png",
+        "location":"Santa Clara, CA (Remote)",
+        "duration":"Summer 2021",
+        "description":"I had the opportunity to work with NVIDIA's Robotics Platform Team. The ROS Engineering Team strived to help bring NVIDIA's powerful hardware to the front lines with optimized algorithms to challenge their open-source, CPU versions of ROS2 packages.",
+        "bullets":[
+            "Optimized standard ROS2 packages to run faster on NVIDIA hardware using internal APIs (C++)",
+            "Reinforced project stability by writing multiple unit and integration tests (Python)",
+            "Set software improvement goals based on performance benchmarking scripts (Python)"
+        ]        
+    },
+    {
+        "name":"Software Engineer - MITOS",
+        "logoPath":"/static/images/MIT_logo.png",
+        "location":"Cambridge, MA (Remote)",
+        "duration":"2020-2021",
+        "description":"The MIT Office of Sustainability (MITOS) team focuses on preparing MIT for climate change. I worked with the Flood Risk Analysis team to see the impacts of future storm flooding on our campus.<br> <span style=\"font-weight: bold; color: black;\">See an article about my Fellow Story </span><a href=\"http://sustainability.mit.edu/article/student-fellow-stories-piero-orderique\" style=\"color: rgb(179, 122, 0);\">here</a>",
+        "bullets":[
+            "Cut down data processing time in half using SQL queries in ArcGIS Pro",
+            "Created custom VBA functions for Excel to enhance project scalability and efficiency for future analysis",
+            "Work helped identify a potential $600M+ worth of damage to university property from storm flooding simulation",
+            "Design a Python package for reading and visualizing 300+ specialized data files from models using SciPy and matplotlib while practicing OOD",
+            "Reduced space storage by 99.99% (from 1.1TB to < 1MB) by filtering large global datasets on a remote linux cluster",
+            "Created data visualizations (matplotlib) for precipitation and temperature predictions in the Cambridge area"
+        ]        
+    },
+    {
+        "name":"Project Associate",
+        "logoPath":"/static/images/borinquenfoods_logo.jpg",
+        "location":"Columbus, GA",
+        "duration":"2017-2020",
+        "description":"Borinquen Foods is a family owned, Caribbean style restaurant/store that sells ethnic foods from Central and South America.        ",
+        "bullets":[
+            "Built and implemented an Arduino security system that sends messages to the owner when activated",
+            "Updated security systems and feedback on a budget",
+            "Quadrupled the restaurant's Google reviews and increased market reach by designing advertisements on Canva",
+            "Digitized checking accounts using Excel"
+        ]        
+    },
+    {
+        "name":"Math Instructor",
+        "logoPath":"/static/images/mathnasium_logo.jpg",
+        "location":"Columbus, GA",
+        "duration":"2020-2021",
+        "description":"Mathnasium is a nationwide math tutoring business helping students and adults enjoy learning mathematics.",
+        "bullets":[
+            "Instructed adults for exams (GRE, ASVAB, etc.) and oversaw the instruction of 70+ K-12 students",
+            "Received 100% positive evaluations and rescheduling rates",
+            "Accommodated Spanish-speaking students and applied training to work with students with learning disabilities"
+        ]
+    }
+]
