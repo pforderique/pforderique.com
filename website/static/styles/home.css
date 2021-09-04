@@ -25,7 +25,7 @@
 }
 
 .subtitle {
-    font-size: 1.75rem;
+    font-size: 1.55rem;
     font-style: italic;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 200;
@@ -69,9 +69,9 @@
 .about-section {
     color: #000000;
     /* background-color: rgba(54, 82, 120, 0.116); */
-    width: 92%;
-    margin: 0% 4%;
-    padding: 6vh 0% 5vh 0%;
+    width: 100%;
+    margin: 0%;
+    padding: 6vh 0%;
     display: flex; 
     justify-content: space-evenly;
     align-items:flex-end;
@@ -108,7 +108,7 @@
     color: #2c2c2c;
     width: 92%;
     margin: 0% 4% 0% 4%;
-    padding: 8px 8px 8px 8px;
+    padding: 8px;
     border-radius: 10px;
     background-size: cover;
     background-image: url("/static/images/plexus-bg3.jpg");
@@ -122,21 +122,12 @@
     /* margin: 4vh 30% 4vh 30%; */
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     margin: auto;
-    padding: 2vh 2.5% 2vh 2.5%;
+    padding: 3vh 2.5% 2vh;
 }
 
 .skills{
     padding: 0 5vw;
 }
-
-/* .skills-title h3{
-    font-size: 2.125rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.235;
-    letter-spacing: 0.00735em;
-    padding-top: 3%;
-} */
 
 .skills-subtitle{
     font-size: 1.25rem;
@@ -201,6 +192,6 @@ p.xp-body {
 @media (max-width: 500px) { 
     .skills-title h3 {
         font-size: 1.3rem;
-        padding: 2vh 0 0 0;
+        padding: 1vh 0 0 0;
     }
 }
