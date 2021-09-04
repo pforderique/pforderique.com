@@ -47,7 +47,7 @@
 }
 
 .resume-button {
-    color: crimson;
+    color: rgb(206, 134, 26);;
     white-space: nowrap;
     margin: 1% 0% 0% 0%;
     padding: 1vh 2%;
@@ -62,7 +62,7 @@
 
 .resume-button:hover {
     background-color: #000000de;
-    color: rgb(255, 133, 158);
+    color: rgb(206, 152, 71);;
 }
 
 /* ABOUT SECTION */
