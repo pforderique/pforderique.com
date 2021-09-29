@@ -27,43 +27,26 @@
     {% for project_tup in projects %}
         <div class="projects-row">
             {% if project_tup[1] != "" %}
-            <div class="col air-container">
-                <h3> 
-                    <a href="{{url_for('views.project', name=project_tup[0].name)}}">
-                    <b>{{project_tup[0].name}}</b></a> 
-                </h3>
-                <div class="image-container">
-                    <a href="{{url_for('views.project', name=project_tup[0].name)}}">
-                        <img src="{{project_tup[0].image_link}}">
-                    </a>
-                </div>   
-                <div class="project-data">
-                    <div>Date: {{project_tup[0].date_created}}</div>
-                    <div>&nbsp Views: {{project_tup[0].views}}</div>
-                </div>  
-                <div class="project-des">
-                    {{project_tup[0].short_description}}
-                </div>           
-            </div>
-
-            <div class="col air-container">
-                <h3>
-                    <a href="{{url_for('views.project', name=project_tup[1].name)}}">
-                    <b>{{project_tup[1].name}}</b></a> 
-                </h3>
-                <div class="image-container">
-                    <a href="{{url_for('views.project', name=project_tup[1].name)}}">
-                        <img src="{{project_tup[1].image_link}}">
+                {% for project in project_tup %}
+                <div class="col air-container">
+                    <h3> 
+                        <a href="{{url_for('views.project', name=project.name)}}">
+                        <b>{{project.name}}</b></a> 
+                    </h3>
+                    <div class="image-container">
+                        <a href="{{url_for('views.project', name=project.name)}}">
+                            <img src="{{project.image_link}}">
                         </a>
+                    </div>   
+                    <div class="project-data">
+                        <div>Date: {{project.date_created}}</div>
+                        <div>&nbsp Views: {{project.views}}</div>
+                    </div>  
+                    <div class="project-des">
+                        {{project.short_description}}
+                    </div>           
                 </div>
-                <div class="project-data">
-                    <div>Date: {{project_tup[1].date_created}}</div>
-                    <div>Views: {{project_tup[1].views}}</div>
-                </div> 
-                <div class="project-des">
-                    {{project_tup[1].short_description}}
-                </div> 
-            </div>
+                {% endfor %}
             {% else %}
             <div class="col air-container" style="margin: 0 2%">
                 <h3> 
