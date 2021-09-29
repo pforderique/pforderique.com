@@ -68,7 +68,6 @@
 /* ABOUT SECTION */
 .about-section {
     color: #000000;
-    /* background-color: rgba(54, 82, 120, 0.116); */
     width: 100%;
     margin: 0%;
     padding: 6vh 0%;
@@ -119,7 +118,6 @@
     width: 35%;
     border: 2px solid #000000;
     border-radius: 10px;
-    /* margin: 4vh 30% 4vh 30%; */
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     margin: auto;
     padding: 3vh 2.5% 2vh;

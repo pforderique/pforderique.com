@@ -1,0 +1,35 @@
+{
+    "PROGRAMMING LANGUAGES":[
+        "Python", "C++", "Java", "JavaScript", "SQL", "HTML/CSS", "LaTeX"
+    ],
+    "TECHNOLOGIES":[
+        "Flask", "Socket IO","Excel", "Git", "ArcGIS", "ROS2", "Docker",
+        "NumPy", "OpenCV", "Matplotlib", "Ubuntu Linux", "jQuery", "JIRA", 
+        "Confluence", "GitHub/GitLab"  
+    ],
+    "CERTIFICATES":[
+        "LinkedIn: PyTorch Essentials" , "OpenCV", "AI Foundations", 
+        "Reccomendation Systems", "Learning Docker", "Advanced Python",
+        "Esri: GIS Basics", "3D Visualization", "Querying Data", 
+        "IBM: Machine Learning with Python", 
+        "Microsoft: Introduction to C++", 
+        "HarvardX: Data Science R Basics", 
+        "UC San Diego: How Virtual Reality Works"
+    ],
+    "COURSES":[
+        "MIT 14.01 Microeconomics",
+        "MIT 18.01 Single Variable Calculus",
+        "MIT 18.02 Multivariable Calculus",
+        "MIT 24.05 Philosophy of Religion",
+        "MIT 3.091 Solid State Chemistry",
+        "MIT 6.0001 Introduction to Computer Science with Python",
+        "MIT 6.006 Intro to Algorithms",
+        "MIT 6.042 Mathematics for Computer Science (Discrete Mathematics)",
+        "MIT 6.08 Intro to Embedded Systems",
+        "MIT 6.901 Design Thinking and Innovation",
+        "MIT 6.UAT Oral Communication",
+        "MIT 7.012 Introductory Biology",
+        "MIT 8.01 Classical Mechanics",
+        "MIT 8.02 Electricity and Magnetism"
+    ]
+}

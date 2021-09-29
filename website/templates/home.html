@@ -59,23 +59,14 @@
         <h3>SKILLS</h3>
     </div>
     <div class="skills">
-        <h6 class="skills-subtitle">PROGRAMMING LANGUAGES</h6>
-        <p class="skills-text">
-            Python, Java, C++, JavaScript, SQL, HTML/CSS, LaTeX
-        </p>
-        <h6 class="skills-subtitle">TECHNOLOGIES</h6>
-        <p class="skills-text">
-            Flask, Android Studio, Linux, Processing, Excel, Git, ArcGIS, NumPy, Matplotlib,
-            Arduino
-        </p>
-        <h6 class="skills-subtitle">CERTIFICATES</h6>
-        <p class="skills-text">
-            Esri: GIS Basics, 3D Visualization, Querying Data, 
-            IBM: Machine Learning with Python, 
-            Microsoft: Introduction to C++, 
-            HarvardX: Data Science R Basics, 
-            UC San Diego: How Virtual Reality Works
-        </p>
+
+        {% for title in skills %}
+            <h6 class="skills-subtitle">{{title}}</h6>
+            <p class="skills-text">
+                {{', '.join(skills[title])}}
+            </p>
+        {% endfor %}
+
     </div>
 </div>
 

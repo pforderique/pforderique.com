@@ -35,7 +35,15 @@ def home():
     with open('website\static\docs\experience.json') as f:
       experience_data = json.load(f)
 
-    return render_template("home.html", user=current_user, visitor_number=visitor_number, experience_data=experience_data)
+    with open('website\static\docs\skills.json') as f:
+      skills = json.load(f)
+      print(skills)
+
+    return render_template("home.html", 
+        user=current_user, 
+        visitor_number=visitor_number, 
+        experience_data=experience_data,
+        skills=skills)
 
 @views.route('/projects', methods=["GET"])
 def projects():

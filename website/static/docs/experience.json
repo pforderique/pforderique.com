@@ -4,11 +4,13 @@
         "logoPath":"/static/images/nvidia.png",
         "location":"Santa Clara, CA (Remote)",
         "duration":"Summer 2021",
-        "description":"I had the opportunity to work with NVIDIA's Robotics Platform Team. The ROS Engineering Team strived to help bring NVIDIA's powerful hardware to the front lines with optimized algorithms to challenge their open-source, CPU versions of ROS2 packages.",
+        "description":"I had the opportunity to work with NVIDIA's Robotics Platform Team. The ROS Engineering Team strived to help bring NVIDIA's powerful hardware to the front lines with optimized algorithms to challenge their open-source, CPU versions of ROS2 packages. <br> <span style=\"font-weight: bold; color: black;\">See an article about the project </span><a href=\"https://developer.nvidia.com/blog/nvidia-ai-perception-coming-to-ros-developers/\" style=\"color: rgb(179, 122, 0);\">here</a> <span style=\"font-weight: bold; color: black;\"> and checkout the GitHub repo </span><a href=\"https://github.com/NVIDIA-AI-IOT/isaac_ros_apriltag\" style=\"color: rgb(179, 122, 0);\">here</a>",
         "bullets":[
             "Optimized standard ROS2 packages to run faster on NVIDIA hardware using internal APIs (C++)",
             "Reinforced project stability by writing multiple unit and integration tests (Python)",
-            "Set software improvement goals based on performance benchmarking scripts (Python)"
+            "Set software improvement goals based on performance benchmarking scripts (Python)",
+            "Diagnosed and solved synchronization issues using time policy algorithms hidden in the implementation file (C++)",
+            "Performed several code reviews (GitLab) and project document updates (Confluence)"
         ]        
     },
     {
